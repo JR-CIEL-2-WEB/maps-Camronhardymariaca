@@ -228,10 +228,16 @@
 	document.getElementById("Button1").addEventListener('click',readTab);
 
 	function readTab(){
-       //TODO
-
-	}
-
+      const cds = JSON.parse(CDs);
+      console.clear();
+      for (let i = 0; i < cds.length; i++) {
+         const cd = cds[i];
+         console.log(`CD[${i}]= `);
+         for (const key in cd) {
+            console.log(key + " : " + cd[key]);
+	      }
+      }
+   }
 </script>
 
 </body>
