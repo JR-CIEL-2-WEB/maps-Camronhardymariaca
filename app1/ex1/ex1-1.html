@@ -29,10 +29,13 @@
 	document.getElementById("Button1").addEventListener('click',readTab);
 
 	function readTab(){
-				//TODO
+		const obj = JSON.parse(CD);
+            console.clear();
+            for (const i in obj) {
+            console.log(i + " : " + obj[i]);
+		}
 	}
-  
-</script>
+	</script>
 
 </body>
 </html>
